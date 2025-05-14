@@ -2,3 +2,4 @@ log*
 [0-9]*
 !0.orig
 constant/polyMesh/
+constant/cellToRegion
