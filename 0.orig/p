@@ -26,7 +26,11 @@ boundaryField
         value           $internalField;
     }
 
-    #includeEtc "caseDicts/setConstraintTypes"
+    frontAndBack
+    {
+        type            empty;
+    }
+
 }
 
 // ************************************************************************* //

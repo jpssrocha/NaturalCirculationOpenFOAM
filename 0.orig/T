@@ -20,24 +20,33 @@ internalField   uniform 300;
 
 boundaryField
 {
-    floor
+    floor_heater
     {
         type            fixedValue;
         value           uniform 301;
     }
 
-    ceiling
+    ceiling_sink
     {
         type            fixedValue;
         value           uniform 300;
     }
 
-    sideWalls
+    outerWalls
     {
         type            zeroGradient;
     }
 
-    #includeEtc "caseDicts/setConstraintTypes"
+    innerWalls
+    {
+        type            zeroGradient;
+    }
+
+    frontAndBack
+    {
+        type            empty;
+    }
+
 }
 
 
